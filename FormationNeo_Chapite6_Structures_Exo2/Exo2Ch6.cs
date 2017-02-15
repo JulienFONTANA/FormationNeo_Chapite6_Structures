@@ -26,8 +26,9 @@ namespace FormationNeo_Chapite6_Structures_Exo2
         {
             /*  A vous de créer l'intégralité du code de cet exercice!
              *  Le QG des superhéros est une immense tour, il y a donc des ascenseurs!
-             *  Créer une variable etage qui représente l'étage auquel on souhaite allez
-             *  créer ensuite un switch (n'oublier pas de définir une valur par défaut)
+             *  Créer une variable etage qui représente l'étage auquel on souhaite allez,
+             *  récupérer la valeur voulue par l'utilisateur (et vérifiez qu'elle est entre 0 et 100),
+             *  puis créer ensuite un switch (n'oublier pas de définir une valeur par défaut)
              *  La tour fait 100 étages, 0 etant l'accueil!
              *  Une petite voix annonce le role de chaque étage:
                     Etage 0   -> Accueil
@@ -41,6 +42,7 @@ namespace FormationNeo_Chapite6_Structures_Exo2
                     Etage 73  -> Système de défense nucléaire
                     Etage 100 -> Etage panoramique
              * Tout les autres étages doivent être annoncés par "Bienvenue à l'étage X", où X est l'étage en question...
+             * Conseil : Allez y pas-à-pas, cette exercice est plus long que dur!
             */
         }
     }
