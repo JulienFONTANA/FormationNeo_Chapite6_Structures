@@ -1,5 +1,5 @@
 ﻿
-/* Bonjour dans le second exercice de la formation Néo!
+/* Bonjour dans le second tutoriel de la formation Néo!
  * Les variables n'ont plus aucun secret pour vous? Bien, allons-y!
  * 
  * Même en ayant une idée des briques élémentaires qui composent votre programme, 
