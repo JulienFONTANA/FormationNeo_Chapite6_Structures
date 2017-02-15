@@ -35,8 +35,25 @@ namespace FormationNeo_Chapite6_Structures_Exo1
         static void Main(string[] args)
         {
             // A vous de déclarer et de modifier les variables comme il vous plaira!
-            bool hero = true;
-            bool superhero = true;
+            bool hero = false;
+            bool superhero = false;
+            char reponseUtilisateur = 'n';
+
+            // Pour faciliter vos tests, cet exercie prends en compte votre entrée utilisateur
+            Console.WriteLine("Etes vous un héro ? y/n");
+            reponseUtilisateur = Console.ReadKey().KeyChar; // Console.ReadKey().KeyChar lit la première lettre du clavier que l'utilisateur tape
+            if (reponseUtilisateur == 'y')
+            {
+                hero = true; // Si l'utilisateur à répondu vrai, hero passe a vrai
+                Console.WriteLine("\nMais etes vous un superhéro ? y/n");
+                reponseUtilisateur = Console.ReadKey().KeyChar;
+                if (reponseUtilisateur == 'y')
+                {
+                    superhero = true; // Si l'utilisateur à répondu vrai, superhero passe a vrai
+                }
+            }
+            // Cette ligne vous permet de tester les valeurs des booleen hero et superhero
+            Console.WriteLine("\nHéro? " + hero + " Superhéro? " + superhero);
 
             // Ce système est défaillante, il laisse rentrer n'importe qui!
             // Appliquer une modification pour que seul un héro puisse passer!
@@ -72,7 +89,6 @@ namespace FormationNeo_Chapite6_Structures_Exo1
 
             // Tout les jours, des centaines de nouvelles personnes tentent d'être accepté chez les superhéros!
             // Ces personnes sont évalués sur 3 critères : puissace, intelligence et vitesse, comprises entre 0 et 100
-            // Si une personne à toutes ces valeurs en dessous de 40, c'est un civil.
             // Si une personne n'as qu'un critère au dessus de 50, et que la somme de ces compétances est égale ou supérieure à 100, c'est un héro
             // Si toutes les valeurs sont supérieurs à 60, alors c'est un super héro
             // Enfin, si une des valeurs est égal à 100 et que la somme des critères est supérieur à 260, c'est surement Superman!
@@ -82,9 +98,33 @@ namespace FormationNeo_Chapite6_Structures_Exo1
             // Indice : Allez y pas à pas!
             // Pas besoin de dire à Superman que c'est un superhéro ni un héro...
             // Pas besoin de dire à un superhéro que c'est un héro non plus!
-            int puissance = 90;
-            int intelligence = 90;
-            int vitesse = 100;
+            // Encore une fois, je vous donne de quoi tester simplement votre programme!
+            int puissance = 0;
+            int intelligence = 0;
+            int vitesse = 0;
+
+            Console.WriteLine("Quel est votre puissance?");
+            int.TryParse(Console.ReadLine(), out puissance); // Attention à bien mettre une valeur numérique!
+
+            Console.WriteLine("Quel est votre intelligence?");
+            int.TryParse(Console.ReadLine(), out intelligence); // Attention à bien mettre une valeur numérique!
+
+            Console.WriteLine("Quel est votre vitesse?");
+            int.TryParse(Console.ReadLine(), out vitesse); // Attention à bien mettre une valeur numérique!
+
+            // Tests pour vérifier que les valeurs sont entre 0 et 100
+            if (puissance < 0)
+                puissance = 0;
+            if (puissance > 100)
+                puissance = 100;
+            if (intelligence < 0)
+                intelligence = 0;
+            if (intelligence > 100)
+                intelligence = 100;
+            if (vitesse < 0)
+                vitesse = 0;
+            if (vitesse > 100)
+                vitesse = 100;
 
             // Ces tests ont été mis sur plusieurs ligne pour plus de visibilité
             if ((puissance + intelligence + vitesse >= 260) &&

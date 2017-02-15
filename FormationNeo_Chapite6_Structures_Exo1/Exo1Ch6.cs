@@ -34,9 +34,26 @@ namespace FormationNeo_Chapite6_Structures_Exo1
 
         static void Main(string[] args)
         {
-            // A vous de déclarer et de modifier les variables comme il vous plaira!
             bool hero = false;
             bool superhero = false;
+            char reponseUtilisateur = 'n';
+
+            // Pour faciliter vos tests, cet exercie prends en compte votre entrée utilisateur
+            Console.WriteLine("Etes vous un héro ? y/n");
+            reponseUtilisateur = Console.ReadKey().KeyChar; // Console.ReadKey().KeyChar lit la première lettre du clavier que l'utilisateur tape
+            if (reponseUtilisateur == 'y')
+            {
+                hero = true; // Si l'utilisateur à répondu vrai, hero passe a vrai
+                Console.WriteLine("\nMais etes vous un superhéro ? y/n");
+                reponseUtilisateur = Console.ReadKey().KeyChar;
+                if (reponseUtilisateur == 'y')
+                {
+                    superhero = true; // Si l'utilisateur à répondu vrai, superhero passe a vrai
+                }
+            }
+            // Cette ligne vous permet de tester les valeurs des booleen hero et superhero
+            Console.WriteLine("\nHéro? " + hero + " Superhéro? " + superhero);
+
 
             // Ce système est défaillante, il laisse rentrer n'importe qui!
             // Appliquer une modification pour que seul un héro puisse passer!
@@ -48,7 +65,7 @@ namespace FormationNeo_Chapite6_Structures_Exo1
             {
                 Console.WriteLine("Seul un héro peut passer!"); // Il faut afficher cette ligne si un "non héro" essaye de rentrer
             }
-            
+
 
             // La salle de controle possède le même système, mais plus complexe
             // Si les héros ont accès au batiment, seul un vrai superhéro doit avoir accès à
@@ -81,9 +98,34 @@ namespace FormationNeo_Chapite6_Structures_Exo1
             // Indice : Allez y pas à pas!
             // Pas besoin de dire à Superman que c'est un superhéro ni un héro...
             // Pas besoin de dire à un superhéro que c'est un héro non plus!
+            // Encore une fois, je vous donne de quoi tester simplement votre programme!
             int puissance = 0;
             int intelligence = 0;
             int vitesse = 0;
+
+            Console.WriteLine("Quel est votre puissance?");
+            int.TryParse(Console.ReadLine(), out puissance); // Attention à bien mettre une valeur numérique!
+
+            Console.WriteLine("Quel est votre intelligence?");
+            int.TryParse(Console.ReadLine(), out intelligence); // Attention à bien mettre une valeur numérique!
+
+            Console.WriteLine("Quel est votre vitesse?");
+            int.TryParse(Console.ReadLine(), out vitesse); // Attention à bien mettre une valeur numérique!
+
+            // Tests pour vérifier que les valeurs sont entre 0 et 100
+            if (puissance < 0)
+                puissance = 0;
+            if (puissance > 100)
+                puissance = 100;
+            if (intelligence < 0)
+                intelligence = 0;
+            if (intelligence > 100)
+                intelligence = 100;
+            if (vitesse < 0)
+                vitesse = 0;
+            if (vitesse > 100)
+                vitesse = 100;
+
 
         }
     }
