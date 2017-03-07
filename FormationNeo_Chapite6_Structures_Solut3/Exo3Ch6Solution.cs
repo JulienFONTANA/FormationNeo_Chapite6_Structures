@@ -36,7 +36,7 @@ namespace FormationNeo_Chapite6_Structures_Exo3
             }
 
             // Solution N°2 - On utilise les propriétés de la boucle for pour n'afficher que les nombres divisible par 7
-            //for (int i = 7; i < 100; i += 7)
+            //for (int i = 7; i < 100; i = i + 7)
             //{
             //    Console.WriteLine(i);
             //}

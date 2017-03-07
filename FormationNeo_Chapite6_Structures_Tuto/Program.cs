@@ -297,7 +297,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
                     estUnHero = true;
                     break;
                 }
-                energie -= 33;
+                energie = energie - 33;
                 Console.WriteLine("Allez encore 100 pompes! Je veux être un héro!");
             }
             // Cette boucle à donc lieu 3 fois avant que la condition "energie == 1" ne soit vraie
@@ -312,7 +312,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
             //int max = 0;
             //while (true)
             //{
-            //    max += 100000;
+            //    max = max + 100000;
             //    Console.WriteLine(max);
             //}
             // Cette boucle est une boucle infinie (tant que la condition est vraie, et elle le reste...)
@@ -364,7 +364,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
             }
 
             // 3- Avec une incrémentation supérieur à 1
-            for (int odd = 1; odd < 15; odd += 2)
+            for (int odd = 1; odd < 15; odd = odd + 2)
             {
                 // Cette boucle à lieu 7 fois, et affiche uniquement des nombres impaires (odd en anglais)
                 //Console.WriteLine("Index odd = " + odd);
