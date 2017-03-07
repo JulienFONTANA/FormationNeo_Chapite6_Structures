@@ -19,9 +19,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FormationNeo_Chapite6_Structures_Exo3
+namespace FormationNeo_Chapite6_Structures_Exo2
 {
-    class Exo3Ch6
+    class Exo2Ch6
     {
         static void Main(string[] args)
         {

@@ -16,10 +16,6 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FormationNeo_Chapite6_Structures_Tuto
 {
@@ -218,56 +214,6 @@ namespace FormationNeo_Chapite6_Structures_Tuto
             }
             // Je vous invite à jouer avec les 3 booléens de cet exemple pour afficher chaque phrase de cet exemple!
 
-            #endregion
-
-            #region Structures conditionnelles (switch)
-            Console.WriteLine('\n' + "- - - Le Switch - - -" + '\n');
-            // Quand un grand nombre de valeurs sont possibles et doivent être testés, une alternative au 'if / else if / else'
-            // est le 'switch'. Reprennons le code précédant:
-
-            monAge = 21;
-
-            switch (monAge)
-            {
-                case 40:
-                    Console.WriteLine("J'ai plus de 40 ans et toutes mes dents!");
-                    break;
-
-                case 21:
-                    Console.WriteLine("J'ai plus de 21 ans! A moi LasVegas!!!");
-                    break;
-
-                case 16:
-                    Console.WriteLine("Je plus de 16 ans !");
-                    break;
-
-                default:
-                    Console.WriteLine("Je ai moins de 16 ans...");
-                    break;
-            }
-            // Même si la structure est un peu lourde, le switch reste pratique quand le nombre de cas n'est pas trop important
-            // En effet ici il ne conviendrait pas si on voulait tester tout les ages entre 0 et 99 ans, car les conditiond d'égalités ne
-            // marche pas! Et oui, ici on test l'égalité stricte...
-            // il reste possible d'écrire:
-
-            int maValeurEntreUnEtCinq = 3;
-
-            switch (maValeurEntreUnEtCinq)
-            {
-                case 5:
-                case 4:
-                    Console.WriteLine("Valeur égale à 4 ou 5");
-                    break;
-                case 3:
-                case 2:
-                    Console.WriteLine("Valeur égale à 2 ou 3");
-                    break;
-                case 1:
-                default:
-                    Console.WriteLine("Valeur égale à 1 ou 0");
-                    break;
-            }
-            // Notez que le mot clé "break" permet aussi de sortir d'une condition, d'une boucle...
             #endregion
 
 
