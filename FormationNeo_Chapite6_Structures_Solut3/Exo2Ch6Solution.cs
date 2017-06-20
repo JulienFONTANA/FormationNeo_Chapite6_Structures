@@ -15,7 +15,7 @@
 
 using System;
 
-namespace FormationNeo_Chapite6_Structures_Exo2
+namespace FormationNeo_Chapite6_Structures_Solution2
 {
     class Exo2Ch6Solution
     {

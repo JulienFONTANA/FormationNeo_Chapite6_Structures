@@ -18,9 +18,9 @@
 
 using System;
 
-namespace FormationNeo_Chapite6_Structures_Exo1
+namespace FormationNeo_Chapite6_Structures_Solution1
 {
-    class Exo1Ch6
+    class Exo1Ch6Solution
     {
         /* Nous allons créer un système d'identification pour savoir qui aura accès au QG des
          * héros, et pour cela nous allons tester notre système de défense.
