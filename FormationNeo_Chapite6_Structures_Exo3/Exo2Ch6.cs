@@ -23,7 +23,7 @@ namespace FormationNeo_Chapite6_Structures_Exo2
         {
             // Faites une boucle FOR qui affiche tout le nombres divisibles par 7 entre 1 et 100
 
-            // Faites une boucle WHILE infinie qui tests l'égalitée entre deux int 'a' et 'b' entre 0 et 50000
+            // Faites une boucle WHILE infinie qui test l'égalité entre deux int 'a' et 'b' entre 0 et 50000
             //  ayant 'a' < 'b' et qui incrémente 'a' jusqu'a ce que les deux valeurs soient identiques.
 
             // Faites la boucle de votre choix qui divise par 2 un nombre entier 'n' supérieur à 1000000

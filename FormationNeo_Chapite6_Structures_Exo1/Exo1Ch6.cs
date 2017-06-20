@@ -8,7 +8,6 @@
  * Les notions dont vous avez besoin sont:
  *      --> Les variables
  *      --> Le 'if / else if / else'
- *      --> le switch
  *      --> La logique de Boole
  * 
  * Commencer par choisir ce projet au démarrage. pour ce faire, faites un clic droit sur "FormationNeo_Chapitre6_Structures_Exo1",
@@ -24,7 +23,7 @@ namespace FormationNeo_Chapite6_Structures_Exo1
     class Exo1Ch6
     {
         /* Nous allons créer un système d'identification pour savoir qui aura accès au QG des
-         * super-héros, et pour cela nous allons tester notre système de défense.
+         * héros, et pour cela nous allons tester notre système de défense.
          * C'est parti!
         */
 
@@ -51,7 +50,7 @@ namespace FormationNeo_Chapite6_Structures_Exo1
             Console.WriteLine("\nHéro? " + hero + " Superhéro? " + superhero);
 
 
-            // Ce système est défaillante, il laisse rentrer n'importe qui!
+            // Ce système est défaillant, il laisse rentrer n'importe qui!
             // Appliquer une modification pour que seul un héro puisse passer!
             if (true)
             {
@@ -78,16 +77,16 @@ namespace FormationNeo_Chapite6_Structures_Exo1
                 }
                 else
                 {
-                    // Cette ligne doit être afficher aux héros, mais ni au super héro, ni aux 'non héro'
-                    Console.WriteLine("Désolé, salle réservé au super héros!");
+                    // Cette ligne doit être afficher aux héros, mais ni au superhéro, ni aux 'non héro'
+                    Console.WriteLine("Désolé, salle réservé au superhéros!");
                 }
             }
 
             // Tout les jours, des centaines de nouvelles personnes tentent d'être accepté chez les superhéros!
             // Ces personnes sont évalués sur 3 critères : puissace, intelligence et vitesse, comprises entre 0 et 100
-            // Si une personne n'as qu'un critère au dessus de 50, et que la somme de ces compétances est égale ou supérieure à 100, c'est un héro
-            // Si toutes les valeurs sont supérieurs à 60, alors c'est un super héro
-            // Enfin, si une des valeurs est égal à 100 et que la somme des critères est supérieur à 260, c'est surement Superman!
+            // Si une personne a au moins un critère au dessus de 50, et que la somme de ces critères est égale ou supérieure à 100, c'est un héro
+            // Si tous les critères sont supérieurs à 60, alors c'est un super héro
+            // Enfin, si un des critères est égal à 100 et que la somme des critères est supérieur à 260, c'est surement Superman!
             // Tout les autres sont des civils!
             //
             // A vous d'écrire un code permettant de tester la valeur des nouvelles recrues!

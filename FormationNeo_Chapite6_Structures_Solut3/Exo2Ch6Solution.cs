@@ -37,7 +37,7 @@ namespace FormationNeo_Chapite6_Structures_Exo2
             //    Console.WriteLine(i);
             //}
 
-            // Faites une boucle WHILE infinie qui tests l'égalitée entre deux int 'a' et 'b' entre 0 et 50000
+            // Faites une boucle WHILE infinie qui test l'égalité entre deux int 'a' et 'b' entre 0 et 50000
             //  ayant 'a' < 'b' et qui incrémente 'a' jusqu'a ce que les deux valeurs soient identiques.
             int a = 23007;
             int b = 36042;

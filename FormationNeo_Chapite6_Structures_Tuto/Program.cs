@@ -3,7 +3,7 @@
  * Les variables n'ont plus aucun secret pour vous? Bien, allons-y!
  * 
  * Même en ayant une idée des briques élémentaires qui composent votre programme, 
- * nous n'allons pas reconstruire le QG des super-héros avec si peu!
+ * nous n'allons pas reconstruire le QG des héros avec si peu!
  * Ce projet est lui aussi à lire de haut en bas, comme un livre
  * Les commentaires (en vert, comme celui-çi) sont pour l'instant ce qui est 
  * le plus important à lire et à comprendre !
@@ -71,8 +71,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
             // Attention à bien aérer votre code pour le garder lisible!
 
             // Finalement, vous trouverez peut être les accolades ainsi:
-            if (estUnHero == true)
-            {
+            if (estUnHero == true) {
                 Console.WriteLine("On ne va pas afficher trop de lignes, hein?");
             }
             // Choisissez les accolades qu'il vous plait tant que c'est lisible!
@@ -157,7 +156,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
                 Console.WriteLine("Il aurai fallu que les deux conditions soient vrai pour afficher cette phrase...");
             }
 
-            if (b || c) // si 'b' et 'c', donc si 'vrai' et 'vrai', donc vrai
+            if (b || c) // si 'b' ou 'c', donc si 'vrai' ou 'vrai', donc vrai
             {
                 // Cette proposition est vraie
                 Console.WriteLine("Ces deux propositions sont vraies, donc cette phrase s'affiche!");
@@ -247,7 +246,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
                 Console.WriteLine("Allez encore 100 pompes! Je veux être un héro!");
             }
             // Cette boucle à donc lieu 3 fois avant que la condition "energie == 1" ne soit vraie
-            // Par la suite, le "break" permet de sortir de la boucle (on en a parlé à la fin du switch)
+            // Le "break" permet de sortir de la boucle même si la condition du while est toujours vraie.
             // N"hésitez pas à modifier cette boucle pour tester les limites de la boucle while!
             // Essayer de comprendre ce qui se passe quand on retire ou commente l'instruction 'break'.
             // Chercher à modifier cette boucle pour ne plus avoir besoin de cette instruction (break)
@@ -255,12 +254,12 @@ namespace FormationNeo_Chapite6_Structures_Tuto
 
             // Attention à bien vérifier que vos boucles se terminent correctement!
             // Décommenter le code si dessous et compiler l'application, c'est le grand n'importe quoi!
-            //int max = 0;
-            //while (true)
-            //{
-            //    max = max + 100000;
-            //    Console.WriteLine(max);
-            //}
+            // int max = 0;
+            // while (true)
+            // {
+            //     max = max + 100000;
+            //     Console.WriteLine(max);
+            // }
             // Cette boucle est une boucle infinie (tant que la condition est vraie, et elle le reste...)
             // Et la valeur de "max" ne fait vite plus sens, car on dépasse bien vite la valeur maximale d'un int!
             // Pour arréter le montre, faites un Ctrl + C! Ou cliquer sur la croix en haut à droite.
