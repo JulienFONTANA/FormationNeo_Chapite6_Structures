@@ -302,7 +302,7 @@ namespace FormationNeo_Chapite6_Structures_Tuto
             }
 
             // 2- Avec une décrémentation
-            for (int valeur = 12; valeur < 9; valeur--)
+            for (int valeur = 12; valeur > 9; valeur--)
             {
                 // Cette boucle à lieu 3 fois.
                 //Console.WriteLine("Index valeur = " + valeur);
